@@ -19,10 +19,13 @@ function onGoingTest(){
         console.log(`Good Luck on the next ${questionsLeft}  questions left`)
     }else if(ready === "N" && questionsLeft === 4){
         console.log("Do Not frighten little one")
+        beBack()
     }else if(ready === "N" && questionsLeft >= 2){
         console.log(`its okay to take a break you have ${questionsLeft} questions left`)
+        beBack()
     } else if (ready === "N"){
         console.log("even Java is impressed with you! take the break and come back. Your Status is" + displayStats())
+        beBack()
     }
 }
 firstQuestion();
@@ -115,7 +118,7 @@ function displayStats(){
     console.log(`${username}`)
     console.log(`You have ${questionsLeft} questions left`)
     console.log(`Current Math Index is ${playerIQ}`)
-    if (winningStreak >= 0){
+    if (winningStreak >= 1){
         console.log(`Winning Streak is ${winningStreak}!!`)
     }else {
         console.log("Winning Streak is what now? ")
@@ -131,4 +134,9 @@ function moreToBeAdded() {
         console.log("by Steven Cueto")
 
     }
+}
+
+function beBack(){
+    const byyy = prompt("Resume [Y]")
+    console.log("OK")
 }
