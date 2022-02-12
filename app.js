@@ -41,13 +41,13 @@ console.log("game by Steven Cueto")
 
 function firstQuestion() {
     console.log("What is a Square?")
-    const questionOne = prompt("A square is the result of multiplying a number by itself. [T]rue or [F]alse?")
+    const questionOne = prompt("A square is the result of multiplying a number by itself. [T]rue [F]alse?")
     if(questionOne === "T"){
         playerIQ += 25;
         questionsLeft--
         winningStreak++;
         console.log("Right Choice!")
-        console.log(` Winning Streak is ${winningStreak}!! Can you get more than 5?`)
+        console.log(` Winning Streak is ${winningStreak}!! Can you get more than 3?`)
     }else{
         playerIQ -= 25;
         questionsLeft--
@@ -60,13 +60,13 @@ function firstQuestion() {
 
 function secondQuestion() {
     console.log("Which is the equivalent decimal number for forty nine thousandths?")
-    const questionTwo = prompt("[A] 0.49. [B] .0049. [C] 0.049  [D]4.9")
+    const questionTwo = prompt("[A] 0.49.   [B].0049.   [C] 0.049   [D] 4.9")
     if(questionTwo === "C"){
         playerIQ += 25;
         questionsLeft--
         winningStreak++;
         console.log("Right Choice!")
-        console.log(` Winning Streak is ${winningStreak}!! Can you get more than 5?`);
+        console.log(` Winning Streak is ${winningStreak}!! Can you get more than 3?`);
     }else{
         playerIQ -= 25;
         questionsLeft--
@@ -78,17 +78,17 @@ function secondQuestion() {
 }
 function thirdQuestion() {
     console.log("How much is 23450 x 0.123")
-    const questionThree = prompt("[A] 1423.98 [B] 2,884.45. [C] 2309.049  [D]2410.99")
+    const questionThree = prompt("[A] 1423.98 [B] 2,884.45. [C] 2309.049 [D]2410.99")
     if(questionThree === "B"){
         playerIQ += 25;
         questionsLeft--
         winningStreak++;
         console.log("Right Choice!")
-        console.log(` Winning Streak is ${winningStreak}!! Can you get more than 5?`);
+        console.log(` Winning Streak is ${winningStreak}!! Can you get more than 3?`);
     }else{
         playerIQ -= 25;
         questionsLeft--
-        winningStreak--;
+        winningStreak = 0;
         console.log("Bro, this one was really easy. I would reconsider my choices")
         console.log("Your Winning Streak is over! al least you got one to begin with")
     }
@@ -97,13 +97,13 @@ function thirdQuestion() {
 
 function fourthQuestion() {
     console.log("7. Which of the following is a pair of like terms?")
-    const questionFour = prompt("[A]– 10xyz^2, 3xyz^2 [B] 4xyz^2, 4x^2yz [C] –7xy^2z, – 7x^2yz  [D]3xyz, 3x^2y^2z^2")
+    const questionFour = prompt("[A]– 10xyz^2, 3xyz^2   [B] 4xyz^2, 4x^2yz   [C] –7xy^2z, – 7x^2yz   [D]3xyz, 3x^2y^2z^2")
     if(questionFour === "A"){
         playerIQ += 25;
         questionsLeft--
         winningStreak++;
         console.log("Right Choice!")
-        console.log(` Winning Streak is ${winningStreak}!! Can you get more than 5?`);
+        console.log(` Winning Streak is ${winningStreak}!! Can you get more than 3?`);
     }else{
         playerIQ -= 25;
         questionsLeft--
